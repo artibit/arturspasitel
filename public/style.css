@@ -1,0 +1,88 @@
+#background{
+	background: url(y.jpg);
+}
+#shapa{	
+    border: 1px solid black;
+	background: rgba(255, 126, 0, 0.40);
+	text-align:left;
+    font: normal small-caps 52px/54px fantasy;
+	height:32mm;
+	line-height:100px;
+	max-height:200px;
+}
+* {
+margin:0;
+padding:0;
+outline:none
+}
+
+
+
+#links{	
+    border: 1px solid black;
+    margin: 0 auto;
+	background: rgba(255, 126, 0, 0.40);
+    max-width:600px;
+	margin-top:15px;
+	margin-bottom:15px;
+	padding:30px;
+	padding-left: 150 pt;
+}
+
+#main{	
+    border: 1px solid black;
+	background: rgba(255, 126, 0, 0.40);
+	text-align:center;
+	max-width:200px;
+	margin: 0 auto;
+	margin-top:15px;
+	padding:20px;
+	font: bold italic 110% serif
+}
+/* часть ответственная за выравнивание списков */
+/*  нумерованный 
+ol {
+    list-style-type: none; 
+    counter-reset: my-counter; 
+   }
+   li {
+    margin-bottom: 0.5em; 
+    text-align: center;
+   }
+   li::before {
+    content: counter(my-counter) ".";
+    counter-increment: my-counter; 
+    margin-right: 0.5em; 
+   }
+ */
+/* стиль таблицы */
+  .lux { 
+    width: 300px;
+    border: 1px solid #a52a2a;
+    border-collapse: collapse;
+    border-spacing: 0;
+	text-align:center;
+	margin: auto;
+   }
+   .lux th {
+    background: #a52a2a;
+    color: white; 
+   }
+   .lux td { 
+    border-bottom: 1px solid black;
+   }
+   .lux td, .lux th {
+    padding: 4px;
+   }
+   .caption {
+     caption-side: top;
+     text-align: center;
+     padding: 10px 0; 
+     font-size: 14px;
+}
+   tr:nth-child(even) {
+    background: rgba(76, 255, 0, 1);
+   } 
+   tr:nth-child(odd) {
+    background: rgba(182, 255, 0, 1); 
+   } 
