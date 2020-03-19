@@ -2,7 +2,7 @@ var express = require("express");
 var multer = require('multer');
 var upload = multer();
 var path = require("path");
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 2500;
 var app = express();
 var mysql = require("mysql2");
 
@@ -30,7 +30,7 @@ app.set("view engine", "ejs");
 app.set("views",path.join(__dirname,"views"));
 
 const connection = mysql.createConnection({
-    host: "b4free.net",
+    host: "db4free.net",
     user: "artibit",
     database: "kekero",
     password: "spageti1842"
