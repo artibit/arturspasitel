@@ -13,8 +13,8 @@ app.post("/kek_action", upload.array(),function(request, response,next){
     console.log(request.body);
     console.log(request.body.name);
     connection.execute(
-      "INSERT INTO keker(field-name-1,field-email,field-date,radio-group-1,field-name-4,field-name-2,se) VALUES (?,?,?,?,?,?,?)",
-      [request.body.field-name-1, request.body.field-email,request.body.field-date,request.body.radio-group-1,request.body.field-name-4,request.body.field-name-2,request.body.se],
+      "INSERT INTO keker(name,email,date,radio1,field,field2,se) VALUES (?,?,?,?,?,?,?)",
+      [request.body.name, request.body.email,request.body.date,request.body.radio1,request.body.field,request.body.field2,request.body.se],
       function (err, results, fields) {
           console.log(results);
           console.log(fields);
